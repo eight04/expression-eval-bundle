@@ -6,4 +6,6 @@ Usage:
 const render = expressionEval.compile("[a + 1, b.slice(-2), c.toUpperCase()]");
 render({a: 1, b: "foo", c: "bar"});
 // [ 2, "oo", "BAR" ]
-```
+```m
+
+[Live demo](https://jsbin.com/wokulacatu/edit?js,console)
