@@ -1,0 +1,24 @@
+{
+  "name": "expression-eval-bundle",
+  "version": "0.0.0",
+  "description": "Bundle expression-eval with rollup",
+  "main": "dist/expression-eval.js",
+  "scripts": {
+    "test": "exit 1",
+    "build": "rollup -c && rollup -c --environment COMPRESS",
+    "build-compress": "uglifyjs dist/expression-eval.js -c -m -o dist/expression-eval.min.js --sourcemap"
+  },
+  "devDependencies": {
+    "rollup": "^0.53.0",
+    "rollup-plugin-commonjs": "^8.2.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-re": "^1.0.6",
+    "rollup-plugin-uglify": "^2.0.1",
+    "uglify-es": "github:mishoo/UglifyJS2#harmony"
+  },
+  "repository": "eight04/expression-eval-bundle",
+  "private": true,
+  "dependencies": {
+    "expression-eval": "^1.2.0"
+  }
+}
